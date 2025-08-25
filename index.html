@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SMS Registration – TKM TRUCKLINE INC</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
+    h1, h2 { color: #003366; }
+    label { display: block; margin-top: 10px; }
+    input[type="tel"], input[type="email"] { width: 100%; padding: 8px; margin-top: 5px; }
+    .checkbox { margin-top: 15px; }
+    .submit-btn { margin-top: 20px; padding: 10px 20px; background: #003366; color: white; border: none; cursor: pointer; }
+    .legal { font-size: 0.9em; margin-top: 20px; }
+    .bilingual { font-style: italic; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMS Registration</h1>
+    <p>Stay updated on trucking agreements, dispatch details, and compliance alerts.</p>
+    <p class="bilingual">Оставайтесь в курсе соглашений, информации по рейсам и уведомлений по соблюдению требований.</p>
+
+    <form>
+      <label for="name">Name / Имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number / Номер телефона:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+
+      <label for="email">Email (optional):</label>
+      <input type="email" id="email" name="email">
+
+      <div class="checkbox">
+        <input type="checkbox" id="smsConsent" name="smsConsent" required>
+        <label for="smsConsent">
+          📦 By checking this box, you agree to receive text messages from TKM TRUCKLINE INC. These SMS messages are used to send updates to brokers regarding agreements, trucking details, and confirmations. Learn more about our <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a>. Message frequency varies, and message and data rates may apply. Text HELP for assistance. Reply STOP to opt out.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Register / Зарегистрироваться</button>
+    </form>
+
+    <div class="legal" id="privacy">
+      <h2>📜 SMS Privacy Policy</h2>
+      <p>At TKM TRUCKLINE INC (“we,” “us,” or “our”), we are committed to safeguarding your privacy... [Insert full policy text here]</p>
+    </div>
+
+    <div class="legal" id="terms">
+      <h2>📜 SMS Terms of Service</h2>
+      <p>By opting into SMS notifications through a web form or any other medium, you agree to receive text messages... [Insert full terms text here]</p>
+    </div>
+
+    <div class="legal" id="contact">
+      <h2>📬 Contact Us</h2>
+      <p>For help, text HELP or visit our website: <strong>[Insert your website URL]</strong></p>
+      <p>To opt out, reply STOP to any message.</p>
+    </div>
+  </div>
+</body>
+</html>
